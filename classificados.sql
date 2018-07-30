@@ -1,14 +1,3 @@
-# ************************************************************
-# Sequel Pro SQL dump
-# Versão 4541
-#
-# http://www.sequelpro.com/
-# https://github.com/sequelpro/sequelpro
-#
-# Host: localhost (MySQL 5.5.42)
-# Base de Dados: classificados
-# Tempo de Geração: 2017-08-01 18:46:25 +0000
-# ************************************************************
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -36,7 +25,7 @@ CREATE TABLE `anuncios` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `anuncios` WRITE;
+
 /*!40000 ALTER TABLE `anuncios` DISABLE KEYS */;
 
 INSERT INTO `anuncios` (`id`, `id_usuario`, `id_categoria`, `titulo`, `descricao`, `valor`, `estado`)
@@ -48,7 +37,7 @@ VALUES
 	(7,1,4,'BMW',NULL,120,1);
 
 /*!40000 ALTER TABLE `anuncios` ENABLE KEYS */;
-UNLOCK TABLES;
+
 
 
 # Dump da tabela anuncios_imagens
@@ -119,15 +108,15 @@ CREATE TABLE `usuarios` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `usuarios` WRITE;
+
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `telefone`)
 VALUES
-	(1,'Bonieky','suporte@b7web.com.br','202cb962ac59075b964b07152d234b70','99999999');
+	(1,'Denis','denvito@gmail.com.br','202cb962ac59075b964b07152d234b70','99999999');
 
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
-UNLOCK TABLES;
+
 
 
 
